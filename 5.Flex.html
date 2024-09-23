@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+		<title>Bootstrap 5 Flex</title>
+		<style>
+			div,span {
+				min-height: 70px;
+				min-width: 70px;
+				margin: 2px;
+			}
+			body {
+				margin-bottom: 500px;
+			}
+			hr{
+				margin: 50px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		 <!-- DISPLAY FLEX -->
+		 <div class="d-flex">
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div>
+		<br>
+
+		<!-- FLEX WRAP-->
+		<!-- 플렉스 랩을 쓰면 화면을 넘어간 아이템들이 아래로 내려가서 정렬(자동) -->
+		<div class="d-flex flex-wrap">
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		</div>
+		<br>
+
+		 <!-- FLEX DIRECTION ROW: 가로 정렬방향-->
+		 <div class="d-flex flex-row">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		 <!-- FLEX DIRECTION COLUMN: 세로로 방향 정렬-->
+		<div class="d-flex flex-column">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		 <!-- FLEX DIRECTION ROW REVERSE: 순서가 반대 3-> 2-> 1 -->
+		 <div class="d-flex flex-row-reverse">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+		
+		   <!-- FLEX DIRECTION COLUMN REVERSE-->
+		   <div class="d-flex flex-column-reverse">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+		
+		<!-- JUSTIFY CONTENT START:기본 왼쪽-->
+		<div class="d-flex justify-content-start">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		 <!-- JUSTIFY CONTENT END: 오른쪽-->
+		 <div class="d-flex justify-content-end">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		 <!-- JUSTIFY CONTENT CENTER: 가운데-->
+		 <div class="d-flex justify-content-center">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		 <!-- JUSTIFY CONTENT BETWEEN: 아이템 사이에 공백-->
+		 <div class="d-flex justify-content-between">
+			<div class="border border-3 border-success">1</div>
+			<div class="border border-3 border-success">2</div>
+			<div class="border border-3 border-success">3</div>
+		</div>
+		<br>
+
+		    <!-- JUSTIFY CONTENT AROUND : 앞 뒤에도 공백 들어감-->
+			<div class="d-flex justify-content-around">
+				<div class="border border-3 border-success">1</div>
+				<div class="border border-3 border-success">2</div>
+				<div class="border border-3 border-success">3</div>
+			</div>
+		<br>
+
+			<!-- JUSTIFY CONTENT EVENLY: 모두 같은크기의 공백-->
+			<div class="d-flex justify-content-evenly">
+				<div class="border border-3 border-success">1</div>
+				<div class="border border-3 border-success">2</div>
+				<div class="border border-3 border-success">3</div>
+			</div>
+		<br>
+		
+		<!-- ALIGN ITEMS START: 위쪽  -->
+		<div class="d-flex bg-dark align-items-start" style="height: 300px;">
+			<div class="border border-3 border-light">1</div>
+			<div class="border border-3 border-light">2</div>
+			<div class="border border-3 border-light">3</div>
+		</div>
+		<br>
+
+		<!-- ALIGN ITEMS END: 아래쪽 -->
+		<div class="d-flex bg-dark align-items-end" style="height: 300px;">
+			<div class="border border-3 border-light">1</div>
+			<div class="border border-3 border-light">2</div>
+			<div class="border border-3 border-light">3</div>
+		</div>
+		<br>
+
+		<!-- ALIGN ITEMS CENTER -->
+		<div class="d-flex bg-dark align-items-center justify-content-center" style="height: 300px;">
+			<div class="border border-3 border-light">1</div>
+			<div class="border border-3 border-light">2</div>
+			<div class="border border-3 border-light">3</div>
+		</div>
+	
+	</body>
+</html>

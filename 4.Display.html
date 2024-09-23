@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+		<title>Bootstrap 5 Display</title>
+		<style>
+			div,span {
+				min-height: 150px;
+				min-width: 150px;
+				margin: 10px;
+				
+			}
+			body {
+				margin-bottom: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		 <!-- DISPLAY PROPERTIES: 디스플레이 속성: 
+		  인라인(내용크기만큼)/ 블록(한줄)/ 인라인 블록(크기적용됨) -->
+		 <div class="border border-2 border-danger d-inline">인라인</div>
+		 <div class="border border-2 border-danger d-inline">인라인</div>
+		 <div class="border border-2 border-danger d-inline">인라인</div>
+		 <br>
+		 <div class="border border-2 border-danger d-inline-block">인라인블록</div>
+		 <div class="border border-2 border-danger d-inline-block">인라인블록</div>
+		  <div class="border border-2 border-danger d-inline-block">인라인블록</div>
+		 <br>
+		 <span class="border border-2 border-warning d-block"></span>
+		 <span class="border border-2 border-warning d-block"></span>
+		 <span class="border border-2 border-warning d-block"></span>
+
+
+		<!-- 정렬 flex, grid -->
+		 <!-- 부모태그에서 플렉스 사용시 자식 아이템 정렬-->
+		 <div class="d-flex">
+			<div class="border"></div>
+			<div class="border"></div>
+			<div class="border"></div>
+		 </div>
+
+		 <!-- 부모에서 그리드 적용 -->
+		  <div class="d-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+				<div class="border"></div>
+				<div class="border"></div>
+				<div class="border"></div>
+		  </div>
+
+
+	</body>
+</html>

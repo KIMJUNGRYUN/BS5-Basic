@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+		<title>Bootstrap 5 Basics</title>
+		<style>
+			div>div {
+				min-height: 70px;
+				min-width: 70px;
+				margin: 20px;
+				display: inline-block;
+				background-color: #1e1e1e;
+			}
+			div{
+				min-width: 50px;
+				min-height: 50px;
+			}
+			body {
+				margin-bottom: 500px;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- POSITIONS 상대(relative)/절대(absolute) 좌표, 고정, -->
+		<div class="position-relative border border-5 border-danger text-white"  style="height: 100vh;">
+			
+			<!-- 절대좌표의 기준의 부모중 position 있는 박스 없으면 화면기준  -->
+			<div class="position-absolute">1</div>
+			<div class="position-absolute bottom-50 end-50">2</div>
+			<div class="position-absolute bottom-0 end-0">3</div>
+			<div class="position-absolute top-50 start-50 translate-middle">4</div>
+			<div class="position-absolute top-o end-0">5</div>
+			<!-- <div class="position-absolute top-100 start-0"></div> -->
+		</div>
+		<!-- 고정 좌표 -->
+		<div class="position-fixed bg-primary top-50 start-50 translate-middle"></div>
+
+		<button class="btn btn-primary position-relative">
+			Mails
+			<span class="position-absolute bg-secondary badge rounded-pill top-0 start-100 translate-middle">+99</span>
+		</button>
+	</body>
+</html>

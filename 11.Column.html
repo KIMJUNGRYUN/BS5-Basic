@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+		<title>Bootstrap 5 Basics</title>
+		<style>
+			div > div > div {
+				background: #F7941F;
+				padding: 1rem;
+				border: 1px solid white;
+				font-weight: 600;
+				color: white;
+				border-radius: 7px;
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 부트스트랩에서 열을 사용시 container>row>col -->
+		 <!-- EQUAL WIDTH COLUMNS -->
+		 <div class="container">
+        <!-- 첫번째 줄 -->
+			<div class="row">
+				<div class="col">1 of 3</div>
+				<!-- 두번째 줄 -->
+				<div class="col">2 of 3</div>
+				<div class="col">3 of 3</div>
+			</div>
+			<div class="row">
+				<div class="col">1 of 2</div>
+				<div class="col">2 of 2</div>
+			</div>
+		</div>
+		<!-- 열의 길이가 다를경우 8대 4(항상 합은 12) -->
+		 <div class="container">
+			<div class="row">
+				<div class="col-8">8/12 등분</div>
+				<div class="col-4">4/12 등분</div>
+			</div>
+		 </div>
+
+		 <!-- 반응형 -->
+		 	
+		 <div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
